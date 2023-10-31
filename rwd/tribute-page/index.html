@@ -1,0 +1,48 @@
+<!-- 
+1. Your tribute page should have a main element with a corresponding id of main, which contains all other elements
+2. You should see an element with an id of title, which contains a string (i.e. text), that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug")
+3. You should see either a figure or a div element with an id of img-div
+4. Within the #img-div element, you should see an img element with a corresponding id="image"
+5. Within the #img-div element, you should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in #img-div
+6. You should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page
+7. You should see an a element with a corresponding id="tribute-link", which links to an outside site, that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab
+8. Your #image should use max-width and height properties to resize responsively, relative to the width of its parent element, without exceeding its original size
+9. Your img element should be centered within its parent element
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tribute Page</title>
+  </head>
+
+  <body>
+
+    <main id="main">
+
+      <h1 id="title">Tito Vilanova</h1>
+      
+      <figure id="img-div">
+        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tito_Vilanova_%282012%29.jpg/220px-Tito_Vilanova_%282012%29.jpg" alt="Tito Vilanova with his thumb up">
+        <figcaption id="img-caption">Tito Vilanova with his thumb up</figcaption>
+      </figure>
+
+      <div id="tribute-info">
+        <p>Francesc "Tito" Vilanova Bayó (17 September 1968 - 25 April 2014) was a Spanish professional football central midfielder and manager.</p>
+        <p>After a career which consisted of a total of 26 La Liga matches in three seasons, all with Celta, he went on to work with Barcelona as an assistant coach under Pep Guardiola, being part of the squad that had won 14 titles.</p>
+        <p>Vilanova was appointed as first-team manager in 2012, winning La Liga in his only season. He stepped down in July 2013 due to ill health, and died the next year from throat cancer. </p>
+      </div>
+      
+      <p id="tribute-extra">Read more about him in his 
+      <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Tito_Vilanova">Wikipedia article</a>
+      </p>
+
+    </main>
+
+  </body>
+
+</html>
