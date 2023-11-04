@@ -1,0 +1,143 @@
+<!-- 
+1. You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
+2. Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five
+3. The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+4. Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
+5. The .main-section elements should contain at least ten p elements total (not each)
+6. The .main-section elements should contain at least five code elements total (not each)
+7. The .main-section elements should contain at least five li items total (not each)
+8. You can see a nav element with a corresponding id="navbar"
+9. The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+10. Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+11. The header element in the #navbar must come before any link (a) elements in the navbar
+12. Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+13. When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+14. On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+15. Your technical documentation should use at least one media query
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <nav id="navbar">
+      <header>
+        <h1>Hello World</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="#introduction" class="nav-link">Introduction</a>
+        </li>
+        <li>
+          <a href="#c" class="nav-link">C</a>
+        </li>
+        <li>
+          <a href="#java" class="nav-link">Java</a>
+        </li>
+        <li>
+          <a href="#javascript" class="nav-link">JavaScript</a>
+        </li>
+        <li>
+          <a href="#python" class="nav-link">Python</a>
+        </li>
+        <li>
+          <a href="#ruby" class="nav-link">Ruby</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+
+      <section id="introduction" class="main-section">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <p>This is how we can print Hello World in these five programming languages:</p>
+        <ul>
+          <li>C</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Ruby</li>
+        </ul>
+      </section>
+
+      <section id="c" class="main-section">
+        <header>
+          <h2>C</h2>
+        </header>
+        <p>Created in 1972</p>
+        <p>Hello World in this language:</p>
+        <code>
+          #include &lt;stdio.h&gt;<br>
+          <br>
+          int main() {<br>
+          &nbsp;&nbsp;printf("Hello World");<br>
+          &nbsp;&nbsp;return 0;<br>
+          }
+        </code>
+      </section>
+
+      <section id="java" class="main-section">
+        <header>
+          <h2>Java</h2>
+        </header>
+        <p>Created in 1995</p>
+        <p>Hello World in this language:</p>
+        <code>
+          import java.io.*;<br>
+          <br>
+          class GFG {<br>
+          &nbsp;&nbsp;public static void main (String[] args) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World");<br>
+          &nbsp;&nbsp;}<br>
+          }
+        </code>
+      </section>
+
+      <section id="javascript" class="main-section">
+        <header>
+          <h2>JavaScript</h2>
+        </header>
+        <p>Created in 1995</p>
+        <p>Hello World in this language:</p>
+        <code>
+          console.log("Hello World");
+        </code>
+      </section>
+
+      <section id="python" class="main-section">
+        <header>
+          <h2>Python</h2>
+        </header>
+        <p>Created in 1991</p>
+        <p>Hello World in this language:</p>
+        <code>
+          print("Hello World")
+        </code>
+      </section>
+
+      <section id="ruby" class="main-section">
+        <header>
+          <h2>Ruby</h2>
+        </header>
+        <p>Created in 1993</p>
+        <p>Hello World in this language:</p>
+        <code>
+          puts 'Hello World'
+        </code>
+      </section>
+
+    </main>
+
+  </body>
+
+</html>
