@@ -1,0 +1,65 @@
+<!-- 
+1. Your product landing page should have a header element with a corresponding id="header"
+2. You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)
+3. Within the #header element, you can see a nav element with a corresponding id="nav-bar"
+4. You can see at least three clickable elements inside the nav element, each with the class nav-link
+5. When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+6. You can watch an embedded product video with id="video"
+7. Your landing page has a form element with a corresponding id="form"
+8. Within the form, there is an input field with id="email" where you can enter an email address
+9. The #email input field should have placeholder text to let users know what the field is for
+10. The #email input field uses HTML5 validation to confirm that the entered text is an email address
+11. Within the form, there is a submit input with a corresponding id="submit"
+12. When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
+13. The navbar should always be at the top of the viewport
+14. Your product landing page should have at least one media query
+15. Your product landing page should utilize CSS flexbox at least once
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header id="header">
+      <img src="https://render.myfonts.net/fonts/font_rend.php?id=fd0ab82919178ff276da3aa586bf21f9&rt=Engravers%27%20Old%20English%20BT%20Std%20Bold&rs=48&w=650&sc=2&nie=true" alt="A logo" id="header-img">
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#subscribe-section" class="nav-link">Subscribe</a></li>
+          <li><a href="#features-section" class="nav-link">Features</a></li>
+          <li><a href="#media-section" class="nav-link">Media</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="subscribe-section">
+      <h2>Subscribe to our newspaper</h2>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" name="email" id="email" placeholder="Enter your email here">
+        <input type="submit" value="Subscribe" id="submit">
+      </form>
+    </section>
+
+    <section id="features-section">
+      <h2>Features</h2>
+      <ul>
+        <li>News: Engage with expert reporting, including culture coverage and analysis.</li>
+        <li>Games: Unwind with Spelling Bee, Wordle, The Crossword and more.</li>
+        <li>Cooking: Enjoy delicious recipes, advice and inspiration daily.</li>
+        <li>Wirecutter: Choose products confidently with reviews and real-world testing.</li>
+        <li>The Athletic: Follow in-depth, personalized coverage of your favorite sports.</li>
+      </ul>
+    </section>
+
+    <section id="media-section">
+      <h2>Media</h2>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/GtqhRfYFC6s?si=7_gTiUiiuE_FTLXD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+  </body>
+</html>
