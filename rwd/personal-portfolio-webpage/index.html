@@ -1,0 +1,81 @@
+<!-- 
+1. Your portfolio should have a welcome section with an id of welcome-section
+2. The welcome section should have an h1 element that contains text
+3. Your portfolio should have a projects section with an id of projects
+4. The projects section should contain at least one element with a class of project-tile to hold a project
+5. The projects section should contain at least one link to a project
+6. Your portfolio should have a navbar with an id of navbar
+7. The navbar should contain at least one link that you can click on to navigate to different sections of the page
+8. Your portfolio should have a link with an id of profile-link, which opens your GitHub or freeCodeCamp profile in a new tab
+9. Your portfolio should have at least one media query
+10. The height of the welcome section should be equal to the height of the viewport
+11. The navbar should always be at the top of the viewport
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">HOME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+      </ul>
+    </nav>
+
+    <section id="welcome-section">
+      <h1>Welcome!</h1>
+    </section>
+
+    <section id="projects">
+      <div class="project-tile">
+        <a href="https://emanuel-serveleon.github.io/fcc-projects/rwd/survey-form/index.html">
+          <img src="./images/survey-form.png" alt="A preview of the survey form project">
+          <p>Survey Form</p>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://emanuel-serveleon.github.io/fcc-projects/rwd/tribute-page/index.html">
+          <img src="./images/tribute-page.png" alt="A preview of the tribute page project">
+          <p>Tribute Page</p>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://emanuel-serveleon.github.io/fcc-projects/rwd/technical-documentation-page/index.html">
+          <img src="./images/technical-documentation-page.png" alt="A preview of the technical documentation page project">
+          <p>Technical Documentation Page</p>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://emanuel-serveleon.github.io/fcc-projects/rwd/product-landing-page/index.html">
+          <img src="./images/product-landing-page.png" alt="A preview of the product landing page project">
+          <p>Product Landing Page</p>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://emanuel-serveleon.github.io/fcc-projects/rwd/personal-portfolio-webpage/index.html">
+          <img src="./images/personal-portfolio-webpage.png" alt="A preview of the personal portfolio webpage project">
+          <p>Personal Portfolio Webpage</p>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <a href="https://www.freecodecamp.org/emanuel-serveleon" id="profile-link" target="_blank">Go to my freeCodeCamp profile</a>
+    </footer>
+
+  </body>
+
+</html>
